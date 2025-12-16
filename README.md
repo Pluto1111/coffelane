@@ -1,4 +1,4 @@
-# Coffee Lane: Full-Stack E-commerce Platform (still in progress)
+# ☕ Coffee Lane: Full-Stack E-commerce Platform (still in progress)
 
 <br> <img width="1880" height="954" alt="image" src="https://github.com/user-attachments/assets/aba2ffaf-143e-401f-a10e-46a268bed170" />
 
@@ -22,31 +22,13 @@ User Authentication & Security: Implementation of secure login, registration, an
 <br> 2. Dedicated Administration Panel
 A critical feature of this project is the fully functional administration interface, which allows site operators to manage content, products, and users effectively. This demonstrates the ability to build and secure complex B2B (business-to-business) functionality for system operation.
 
-<br> 🛠️ Technology Stack
-This project was built with a robust, modern full-stack architecture, emphasizing scalability, state management, and performance:
+<br> 🛠️ Technology Stack Deep Dive
+The architecture is modern and comprehensive, built for performance and maintainability across both the client and server.
 
-Frontend:
+Frontend Technologies (User Interface)
+The client-side uses the React and JavaScript ecosystem for a dynamic user experience. State management is handled by Redux Toolkit for centralized and predictable application state. The UI is built with Material UI for standardized, professional components, and routing is managed by React Router. API communication is handled via Axios, and authentication relies on JWT/OAuth2.
 
-Core: React, JavaScript
+Backend & Logic (Python-based)
+The server-side provides a scalable foundation built on Python and Django Rest Framework (DRF), used for building secure and maintainable RESTful APIs. Security is enforced using JWT/OAuth2.
 
-State Management: Redux Toolkit (for predictable and centralized application state)
-
-Routing: React Router
-
-UI/Styling: Material UI (for professional, standardized components)
-
-API Communication: Axios
-
-Authentication: JWT/OAuth2
-
-Backend & Logic (Java-based):
-
-Spring Boot 3.4 (Web, Data, Security)
-
-Maven (Dependency management)
-
-PostgreSQL / Redis (Data persistence and caching for performance)
-
-Docker (Containerization for standardized development and deployment environments)
-
-Git (Professional version control)
+Data persistence utilizes PostgreSQL, hosted via Supabase. The deployment architecture leverages Docker for containerization and Render for orchestration and hosting. Asynchronous operations, such as sending emails or processing data, are offloaded using Celery. The API is documented using DRF-yasg (Swagger), tested with Postman, and transactional emails are handled by Mailjet.
